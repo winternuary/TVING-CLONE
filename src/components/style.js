@@ -2,8 +2,9 @@ import styled from "styled-components";
 
 export const HeaderLayout = styled.div`
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  width: 100%;
+  width: 95%;
   padding: 1.5% 2%;
 `;
 
@@ -14,7 +15,6 @@ export const Logo = styled.img`
 export const ButtonBox = styled.div`
   display: flex;
   justify-content: flex-end;
-  margin-right: 5%;
 `;
 
 export const Member = styled.img`
