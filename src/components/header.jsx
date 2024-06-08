@@ -3,7 +3,7 @@ import Logo from "../assets/Logo.svg";
 import Member from "../assets/button1.png";
 import Login from "../assets/button2.png";
 
-function Header() {
+const Header = () => {
   return (
     <S.HeaderLayout>
       <S.Logo src={Logo} />
