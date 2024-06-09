@@ -13,6 +13,6 @@ const Header = () => {
       </S.ButtonBox>
     </S.HeaderLayout>
   );
-}
+};
 
 export default Header;
