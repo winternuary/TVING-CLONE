@@ -22,7 +22,7 @@ const Login = () => {
             onChange={(e) => setContent(e.target.value)}
             value={content}
           />
-          <S.Loginin src={Loginin} onClick={() => navigate("/main")} />
+          <S.Loginin src={Loginin} onClick={() => navigate("/profile")} />
         </S.InputBox>
       </S.LoginLayout>
     </>
