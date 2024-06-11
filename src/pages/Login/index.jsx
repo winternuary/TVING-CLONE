@@ -8,6 +8,15 @@ const Login = () => {
   const [title, setTitle] = useState("");
 
   const navigate = useNavigate();
+
+  const handleLoginClick = () => {
+    if (!title || !content) {
+      alert("아이디와 비밀번호를 작성 해 주세요.");
+    } else {
+      navigate("/profile");
+    }
+  };
+
   return (
     <>
       <S.LoginLayout>
@@ -22,10 +31,11 @@ const Login = () => {
             onChange={(e) => setContent(e.target.value)}
             value={content}
           />
-          <S.Loginin src={Loginin} onClick={() => navigate("/profile")} />
+          <S.Loginin src={Loginin} onClick={handleLoginClick} />
         </S.InputBox>
       </S.LoginLayout>
     </>
   );
 };
+
 export default Login;
