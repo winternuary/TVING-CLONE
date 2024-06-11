@@ -4,6 +4,7 @@ import Header from "./components/header";
 import Start from "./pages/start";
 import Login from "./pages/Login";
 import Profile from "./pages/profile";
+import Main from "./pages/main";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/" element={<Start />} />
           <Route path="/login" element={<Login />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/main" element={<Main />} />
         </Routes>
       </Router>
     </>
